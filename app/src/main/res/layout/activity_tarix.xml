@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/kulrang"
+    android:padding="24dp"
+    android:layout_height="match_parent"
+    tools:context="com.black.blackroomquiz.TarixActivity">
+
+    <TextView
+        android:id="@+id/total_questions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Savollar"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"></TextView>
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bu savol bo'ladi"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:layout_above="@id/choices_layout"
+        android:textAlignment="center"
+        android:layout_margin="20dp"></TextView>
+    <LinearLayout
+        android:id="@+id/choices_layout"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:textColor="@color/black"
+            android:text="Ans A"
+            android:id="@+id/ans_A"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+        <Button
+            android:textColor="@color/black"
+            android:text="Ans B"
+            android:id="@+id/ans_B"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+        <Button
+            android:textColor="@color/black"
+            android:text="Ans C"
+            android:id="@+id/ans_C"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+        <Button
+            android:textColor="@color/black"
+            android:text="Ans D"
+            android:id="@+id/ans_D"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+
+    </LinearLayout>
+
+    <Button
+        android:backgroundTint="@color/kok1"
+        android:id="@+id/sumbit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sumbit"
+        android:layout_below="@id/choices_layout"
+        android:layout_marginTop="40dp"></Button>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-7784983517584423/3597035740">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="kok">#95A2F1</color>
+    <color name="kok1">#5F71E1</color>
+    <color name="kulrang">#0f1416</color>
+    <color name="rang">#323232</color>
+</resources>
